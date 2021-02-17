@@ -1,0 +1,529 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>converter</h2>
+<script>
+function cal(n1,n2,n3)
+{
+  if(n1=="Meter" && n2=="Meter")
+    ashraf.res.value=n3;
+	else if(n1=="Meter" && n2=="K.meter")
+    {
+	n3=n3/1000;
+	ashraf.res.value=n3;
+	}
+	else if(n1=="Meter" && n2=="D.meter")
+    {
+	n3=n3*10;
+	ashraf.res.value=n3;
+	}
+	else if(n1=="Meter" && n2=="C.meter")
+    {
+	n3=n3*100;
+	ashraf.res.value=n3;
+	}
+	else if(n1=="Meter" && n2=="M.meter")
+    {
+	n3=n3*1000;
+	ashraf.res.value=n3;
+	}
+	<!--Km conversion-->
+	 else if(n1=="K.meter" && n2=="K.meter")
+	{
+	  
+	  ashraf.res.value=n3;
+	  }
+	else if(n1=="K.meter" && n2=="Meter")
+	{
+	  n3=n3*1000;
+	  ashraf.res.value=n3;
+	  }
+	  else if(n1=="K.meter" && n2=="D.meter")
+	{
+	  n3=n3*1000*10;
+	  ashraf.res.value=n3;
+	  }
+	  else if(n1=="K.meter" && n2=="C.meter")
+	{
+	  n3=n3*1000*100;
+	  ashraf.res.value=n3;
+	  }
+      else if(n1=="K.meter" && n2=="M.meter")
+	{
+	  n3=n3*1000*1000;
+	  ashraf.res.value=n3;
+	  }
+	  <!--cm conversion-->
+	   else if(n1=="C.meter" && n2=="M.meter")
+	{
+	  n3=n3*10;
+	  ashraf.res.value=n3;
+	  } 
+	  else if(n1=="C.meter" && n2=="C.meter")
+	{
+	  
+	  ashraf.res.value=n3;
+	  }
+	 else if(n1=="C.meter" && n2=="K.meter")
+	{
+	  n3=n3/(100*1000);
+	  ashraf.res.value=n3;
+	  }
+	 else if(n1=="C.meter" && n2=="D.meter")
+	{
+	  n3=n3/10;
+	  ashraf.res.value=n3;
+	  }
+	 else if(n1=="C.meter" && n2=="Meter")
+	{
+	  n3=n3/100;
+	  ashraf.res.value=n3;
+	  }
+	   <!--decim conversion-->
+	   else if(n1=="D.meter" && n2=="D.meter")
+	{
+	  
+	  ashraf.res.value=n3;
+	  }
+	   else if(n1=="D.meter" && n2=="Meter")
+	{
+	  n3=n3/10;
+	  ashraf.res.value=n3;
+	  }
+	   else if(n1=="D.meter" && n2=="C.meter")
+	{
+	  n3=n3*10;
+	  ashraf.res.value=n3;
+	  }
+	  else if(n1=="D.meter" && n2=="M.meter")
+	{
+	  n3=n3*100;
+	  ashraf.res.value=n3;
+	  }
+	   else if(n1=="D.meter" && n2=="K.meter")
+	{
+	  n3=n3/(10*1000);
+	  ashraf.res.value=n3;
+	  }
+	  <!--M.m conversion-->
+	  else if(n1=="M.meter" && n2=="M.meter")
+	{
+	  
+	  ashraf.res.value=n3;
+	  }
+	   else if(n1=="M.meter" && n2=="C.meter")
+	{
+	  n3=n3/(10);
+	  ashraf.res.value=n3;
+	  }
+	   else if(n1=="M.meter" && n2=="D.meter")
+	{
+	  n3=n3/(100);
+	  ashraf.res.value=n3;
+	  }
+	   else if(n1=="M.meter" && n2=="Meter")
+	{
+	  n3=n3/(1000);
+	  ashraf.res.value=n3;
+	  }
+	   else if(n1=="M.meter" && n2=="K.meter")
+	{
+	  n3=n3/(1000*1000);
+	  ashraf.res.value=n3;
+	  }
+	  }
+	 function cal2(n1,n2,n3)
+	  { <!--Gram conversion-->
+	 if(n1=="Gram" && n2=="Gram")
+	{
+	  ashraf.res1.value=n3;
+	  }
+	   else if(n1=="Gram" && n2=="K.gram")
+	{
+	  n3=n3/(1000);
+	  ashraf.res1.value=n3;
+	  }
+	  else if(n1=="Gram" && n2=="C.gram")
+	{
+	  n3=n3*(100);
+	  ashraf.res1.value=n3;
+	  }
+	  else if(n1=="Gram" && n2=="D.gram")
+	{
+	  n3=n3*(10);
+	  ashraf.res1.value=n3;
+	  }
+	 else if(n1=="Gram" && n2=="M.gram")
+	{
+	  n3=n3*(1000);
+	  ashraf.res1.value=n3;
+	  }
+	   <!--K.Gram conversion-->
+	      else if(n1=="K.gram" && n2=="Gram")
+	{
+	  n3=n3*(1000);
+	  ashraf.res1.value=n3;
+	  }
+	   else if(n1=="K.gram" && n2=="K.gram")
+	{
+	  
+	  ashraf.res1.value=n3;
+	  }
+	  else if(n1=="K.gram" && n2=="C.gram")
+	{
+	  n3=n3*(1000*100);
+	  ashraf.res1.value=n3;
+	  }
+	  else if(n1=="K.gram" && n2=="D.gram")
+	{
+	  n3=n3*(10*1000);
+	  ashraf.res1.value=n3;
+	  }
+	 else if(n1=="K.gram" && n2=="M.gram")
+	{
+	  n3=n3*(1000*1000);
+	  ashraf.res1.value=n3;
+	  }
+	   <!--C.Gram conversion-->
+	      else if(n1=="C.gram" && n2=="Gram")
+	{
+	  n3=n3/(100);
+	  ashraf.res1.value=n3;
+	  }
+	   else if(n1=="C.gram" && n2=="C.gram")
+	{
+	  
+	  ashraf.res1.value=n3;
+	  }
+	  else if(n1=="C.gram" && n2=="D.gram")
+	{
+	  n3=n3/(10);
+	  ashraf.res1.value=n3;
+	  }
+	  else if(n1=="C.gram" && n2=="M.gram")
+	{
+	  n3=n3*(10);
+	  ashraf.res1.value=n3;
+	  }
+	 else if(n1=="C.gram" && n2=="K.gram")
+	{
+	  n3=n3/(100*1000);
+	  ashraf.res1.value=n3;
+	  }
+	  <!--D.Gram conversion-->
+	      else if(n1=="D.gram" && n2=="Gram")
+	{
+	  n3=n3/(10);
+	  ashraf.res1.value=n3;
+	  }
+	   else if(n1=="D.gram" && n2=="D.gram")
+	{
+	  
+	  ashraf.res.value=n3;
+	  }
+	  else if(n1=="D.gram" && n2=="C.gram")
+	{
+	  n3=n3*(10);
+	  ashraf.res1.value=n3;
+	  }
+	  else if(n1=="D.gram" && n2=="M.gram")
+	{
+	  n3=n3*(100);
+	  ashraf.res1.value=n3;
+	  }
+	 else if(n1=="D.gram" && n2=="K.gram")
+	{
+	  n3=n3/(10*1000);
+	  ashraf.res1.value=n3;
+	  }
+	  <!--M.Gram conversion-->
+	      else if(n1=="M.gram" && n2=="Gram")
+	{
+	  n3=n3/(1000);
+	  ashraf.res1.value=n3;
+	  }
+	   else if(n1=="M.gram" && n2=="M.gram")
+	{
+	  
+	  ashraf.res1.value=n3;
+	  }
+	  else if(n1=="M.gram" && n2=="C.Gram")
+	{
+	  n3=n3*(10);
+	  ashraf.res1.value=n3;
+	  }
+	  else if(n1=="M.gram" && n2=="D.gram")
+	{
+	  n3=n3*(100);
+	  ashraf.res1.value=n3;
+	  }
+	 else 
+	{
+	  n3=n3/(1000*1000);
+	  ashraf.res1.value=n3;
+	  }
+	} 
+function cal3(n1,n2,n3)
+{
+  if(n1=="Rupees" && n2=="Rupees")
+    ashraf.res3.value=n3;
+	else if(n1=="Rupees" && n2=="Dollar")
+    {
+	n3=n3/60;
+	ashraf.res3.value=n3;
+	}
+	else if(n1=="Rupees" && n2=="Dinar")
+    {
+	n3=n3/70;
+	ashraf.res3.value=n3;
+	}
+	else if(n1=="Rupees" && n2=="Riyal")
+    {
+	n3=n3/80;
+	ashraf.res3.value=n3;
+	}
+	else if(n1=="Rupees" && n2=="Yuro")
+    {
+	n3=n3/50;
+	ashraf.res3.value=n3;
+	}
+	<!--Dollar conversion-->
+	 else if(n1=="Dollar" && n2=="Dollar")
+	{
+	  
+	  ashraf.res3.value=n3;
+	  }
+	else if(n1=="Dollar" && n2=="Rupees")
+	{
+	  n3=n3*60;
+	  ashraf.res3.value=n3;
+	  }
+	  else if(n1=="Dollar" && n2=="Dinar")
+	{
+	  n3=n3/1.5;
+	  ashraf.res3.value=n3;
+	  }
+	  else if(n1=="Dollar" && n2=="Riyal")
+	{
+	  n3=n3/1.2;
+	  ashraf.res3.value=n3;
+	  }
+      else if(n1=="Dollar" && n2=="Yuro")
+	{
+	  n3=n3*1.2;
+	  ashraf.res3.value=n3;
+	  }
+	  <!--Dinar conversion-->
+	   else if(n1=="Dinar" && n2=="Riyal")
+	{
+	  n3=n3*1.2;
+	  ashraf.res3.value=n3;
+	  } 
+	  else if(n1=="Dinar" && n2=="Dinar")
+	{
+	  
+	  ashraf.res3.value=n3;
+	  }
+	 else if(n1=="Dinar" && n2=="Dollar")
+	{
+	  n3=n3*60;
+	  ashraf.res3.value=n3;
+	  }
+	 else if(n1=="Dinar" && n2=="Rupees")
+	{
+	  n3=n3*70;
+	  ashraf.res3.value=n3;
+	  }
+	 else if(n1=="Dinar" && n2=="Yuro")
+	{
+	  n3=n3*2;
+	  ashraf.res3.value=n3;
+	  }
+	   <!--Riyal conversion-->
+	   else if(n1=="Riyal" && n2=="Riyal")
+	{
+	  
+	  ashraf.res3.value=n3;
+	  }
+	   else if(n1=="Riyal" && n2=="Rupees")
+	{
+	  n3=n3*60;
+	  ashraf.res3.value=n3;
+	  }
+	   else if(n1=="Riyal" && n2=="Dollar")
+	{
+	  n3=n3*50;
+	  ashraf.res3.value=n3;
+	  }
+	  else if(n1=="Riyal" && n2=="Yuro")
+	{
+	  n3=n3*70;
+	  ashraf.res3.value=n3;
+	  }
+	   else if(n1=="Riyal" && n2=="Dinar")
+	{
+	  n3=n3/(1.5);
+	  ashraf.res3.value=n3;
+	  }
+	  <!--Dinar conversion-->
+	  else if(n1=="Dinar" && n2=="Dinar")
+	{
+	  
+	  ashraf.res3.value=n3;
+	  }
+	   else if(n1=="Dinar" && n2=="Dollar")
+	{
+	  n3=n3*(60);
+	  ashraf.res3.value=n3;
+	  }
+	   else if(n1=="Dinar" && n2=="Riyal")
+	{
+	  n3=n3*(1.5);
+	  ashraf.res3.value=n3;
+	  }
+	   else if(n1=="Dinar" && n2=="Yuro")
+	{
+	  n3=n3*50;
+	  ashraf.res3.value=n3;
+	  }
+	   else if(n1=="Dinar" && n2=="Rupees")
+	{
+	  n3=n3*(80);
+	  ashraf.res3.value=n3;
+	  }
+	 else if(n1=="Yuro" && n2=="Rupees")
+	 {
+	  n3=n3*50;
+	  ashraf.res3.value=n3;
+	  }
+	  else if(n1=="Yuro" && n2=="Dollar")
+	 {
+	  n3=n3*1.2;
+	  ashraf.res3.value=n3;
+	  }
+	  else if(n1=="Yuro" && n2=="Dinar")
+	 {
+	  n3=n3/60;
+	  ashraf.res3.value=n3;
+	  }
+	  else if(n1=="Yuro" && n2=="Riyal")
+	 {
+	  n3=n3/50;
+	  ashraf.res3.value=n3;
+	  }
+	  else 
+	 {
+	  n3=n3;
+	  ashraf.res3.value=n3;
+	  }
+	  }	
+
+	  
+
+</script>
+<div style="height:200px; width:600px; background-color:cyan; border-radius:10px;">
+<form name="ashraf">
+<br>
+<input type="text" name="alam" style="border-radius:10px; padding:1px" placeholder="Length converter" >
+<select name="A">
+<option value="Meter">Meter</option>
+<option value="K.meter">K.meter</option>
+<option value="D.meter">D.meter</option>
+<option value="C.meter">C.meter</option>
+<option value="M.meter">M.meter</option>
+</select>
+<select name="B">
+<option value="Meter">Meter</option>
+<option value="K.meter">K.meter</option>
+<option value="D.meter">D.meter</option>
+<option value="C.meter">C.meter</option>
+<option value="M.meter">M.meter</option>
+</select>
+ <input type="button" name="Conv" value="Convert" style="border-radius:10px; padding:1px;"onclick="cal(ashraf.A.value,ashraf.B.value,ashraf.alam.value)">
+ <input type="text" name="res" style="border-radius:10px; padding:1px" placeholder="Result" >
+ <br>
+ <br>
+<input type="text" name="alam1" style="border-radius:10px; padding:1px" placeholder="Weight converter" >
+<select name="A1">
+<option value="Gram">Gram</option>
+<option value="K.gram">K.gram</option>
+<option value="D.gram">D.gram</option>
+<option value="C.gram">C.gram</option>
+<option value="M.gram">M.gram</option>
+</select>
+<select name="B1">
+<option value="Gram">Gram</option>
+<option value="K.gram">K.gram</option>
+<option value="D.gram">D.gram</option>
+<option value="C.gram">C.gram</option>
+<option value="M.gram">M.gram</option>
+</select>
+ <input type="button" name="Conv1" value="Convert" style="border-radius:10px; padding:1px;" onclick="cal2(ashraf.A1.value,ashraf.B1.value,ashraf.alam1.value)">
+ <input type="text" name="res1" style="border-radius:10px; padding:1px" placeholder="Result" >
+ <br><br>
+ <input type="text" name="alam2" style="border-radius:10px; padding:1px" placeholder="Money converter" >
+<select name="A2">
+<option value="Rupees">Rupees</option>
+<option value="Dollar">Dollar</option>
+<option value="Dinar">Dinar</option>
+<option value="Riyal">Riyal</option>
+<option value="Yuro">Yuro</option>
+</select>
+<select name="B2">
+<option value="Rupees">Rupees</option>
+<option value="Dollar">Dollar</option>
+<option value="Dinar">Dinar</option>
+<option value="Riyal">Riyal</option>
+<option value="Yuro">Yuro</option>
+</select>
+ <input type="button" name="Conv1" style="border-radius:10px; padding:1px;" value="Convert" onclick="cal3(ashraf.A2.value,ashraf.B2.value,ashraf.alam2.value)">
+ <input type="text" name="res3" style="border-radius:10px; padding:1px" placeholder="Result" >
+</div>
+<div name="ali" style="height:400px; width:550px; background-color:lightcyan; margin-left:700px ;margin-top:-200px ;border-radius:10px;">
+
+<input type="text" id="txt1" placeholder="write Here"><br><br>
+
+<input type="button" class="btn" name="btn9" value="9" onclick="display(btn9.value)" >
+<input type="button" class="btn" name="btn8" value="8" onclick="display(btn8.value)">
+<input type="button" class="btn" name="btn7" value="7" onclick="display(btn7.value)">
+<input type="button" class="btn" name="addbtn" value="+" onclick="display(addbtn.value)"><br>
+<input type="button" class="btn" name="btn6" value="6" onclick="display(btn6.value)">
+<input type="button" class="btn" name="btn5" value="5" onclick="display(btn5.value)">
+<input type="button" class="btn" name="btn4" value="4" onclick="display(btn4.value)">
+<input type="button" class="btn1" name="subbtn" value="-" onclick="display(subbtn.value)"><br>
+<input type="button" class="btn" name="btn3" value="3" onclick="display(btn3.value)">
+<input type="button" class="btn" name="btn2" value="2" onclick="display(btn2.value)">
+<input type="button" class="btn" name="btn1" value="1" onclick="display(btn1.value)">
+<input type="button" class="btn" name="mbtn" value="*" onclick="display(mbtn.value)"><br>
+<input type="button" class="btn" name="btn0" value="0" onclick="display(btn0.value)">
+<input type="button" class="btn" name="btndot" value="." onclick="display(btndot.value)" >
+<input type="button" class="btn" value== onclick="txt1.value=eval(txt1.value)">
+<input type="button" class="btn" name="btne" value="/" onclick="display(btne.value)">
+<input type="button" class="btn2" name="btne1" value="Clear" onclick="display(btne1.value)">
+<input type="button" class="btn3" name="btne2" value="All Clear" onclick="display(btne2.value)">
+
+</div>
+<script>
+function display(n1)
+{ var text=document.getElementById("txt1");
+    if(n1=="All Clear")
+	{text.value="";
+	}
+	else if(n1=="Clear")
+	{
+	
+	  var len=text.value.length;
+	   var s1=text.value.substr(0,len-1);
+	   text.value=s1;
+	   
+	}
+	else
+    text.value=text.value+n1;   
+}
+
+</script>
+</body>
+</html>
